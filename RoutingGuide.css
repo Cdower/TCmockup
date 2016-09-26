@@ -3,6 +3,7 @@ body{
   height: 470px;
   margin: 0;
   position: relative;
+  font-family: sans-serif;
 }
 
 #logo{
