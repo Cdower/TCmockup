@@ -39,6 +39,7 @@ $('document').ready(function(){
       }
     }else{
       if($('#phone').val().length < 10){//other err short number
+        $('#phone').addClass('phoneErr err');
         if($('#phoneMsg').length){
           $('#phoneMsg').empty();
           $('#phoneMsg').append('Please enter a valid phone number.');
@@ -51,7 +52,7 @@ $('document').ready(function(){
       }
     }
     //check for err then go to new page
-    if(!($('.err').length) ){
+    if( (!($('.err').length)) ){
       $('#inner').hide();
       $('#helpText').empty();
       $('#helpText').append('Congratulations!! You have reached the chat agent.');
